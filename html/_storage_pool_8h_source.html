@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>GREMLINS: Código-Fonte de include/StoragePool.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GREMLINS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">GeREnciador de Memória com LIsta eNcadeada Simples</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Ficheiros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">StoragePool.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_storage_pool_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _STORAGE_POOL_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _STORAGE_POOL_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_storage_pool.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_storage_pool.html">StoragePool</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_storage_pool.html#af762401e53c754fccb49703579bd3b31">   20</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_storage_pool.html#af762401e53c754fccb49703579bd3b31">~StoragePool</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>* <a class="code" href="class_storage_pool.html#a5de4eb49eafbf2adb86eb7e66739c947">Allocate</a>( <span class="keywordtype">size_t</span> bytes ) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_storage_pool.html#a783b53d1799425318d9d4c3d5d90ac7c">Free</a>( <span class="keywordtype">void</span> * ptr ) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> * <a class="code" href="class_storage_pool.html#acbbad51d0ba444e55bf5af97b2730b72">AllocateBest</a>( <span class="keywordtype">size_t</span> bytes ) = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_storage_pool.html#a31ebd5b2038d1fdd51eacd1d8fe4831d">showStructure</a>( <span class="keywordtype">bool</span> showDetailed = <span class="keyword">false</span> ) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_storage_pool_html_a783b53d1799425318d9d4c3d5d90ac7c"><div class="ttname"><a href="class_storage_pool.html#a783b53d1799425318d9d4c3d5d90ac7c">StoragePool::Free</a></div><div class="ttdeci">virtual void Free(void *ptr)=0</div><div class="ttdoc">Libera memória de uma região reservada. </div></div>
+<div class="ttc" id="class_storage_pool_html_af762401e53c754fccb49703579bd3b31"><div class="ttname"><a href="class_storage_pool.html#af762401e53c754fccb49703579bd3b31">StoragePool::~StoragePool</a></div><div class="ttdeci">virtual ~StoragePool()</div><div class="ttdoc">Destructor da classe StoragePool. </div><div class="ttdef"><b>Definition:</b> StoragePool.h:20</div></div>
+<div class="ttc" id="class_storage_pool_html_a31ebd5b2038d1fdd51eacd1d8fe4831d"><div class="ttname"><a href="class_storage_pool.html#a31ebd5b2038d1fdd51eacd1d8fe4831d">StoragePool::showStructure</a></div><div class="ttdeci">virtual void showStructure(bool showDetailed=false) const  =0</div><div class="ttdoc">Mostra a estrutura e a organização de um Pool. </div></div>
+<div class="ttc" id="class_storage_pool_html_acbbad51d0ba444e55bf5af97b2730b72"><div class="ttname"><a href="class_storage_pool.html#acbbad51d0ba444e55bf5af97b2730b72">StoragePool::AllocateBest</a></div><div class="ttdeci">virtual void * AllocateBest(size_t bytes)=0</div><div class="ttdoc">Requisita uma quantidade de memória, utilizando método Best-Fist. </div></div>
+<div class="ttc" id="class_storage_pool_html"><div class="ttname"><a href="class_storage_pool.html">StoragePool</a></div><div class="ttdoc">Classe que contém o conjunto de operações mais importantes para manipulação da memória. </div><div class="ttdef"><b>Definition:</b> StoragePool.h:14</div></div>
+<div class="ttc" id="class_storage_pool_html_a5de4eb49eafbf2adb86eb7e66739c947"><div class="ttname"><a href="class_storage_pool.html#a5de4eb49eafbf2adb86eb7e66739c947">StoragePool::Allocate</a></div><div class="ttdeci">virtual void * Allocate(size_t bytes)=0</div><div class="ttdoc">Requisita uma quantidade de memória. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

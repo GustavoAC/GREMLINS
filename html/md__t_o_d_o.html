@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>GREMLINS: Coloque o que você fez aqui</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GREMLINS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">GeREnciador de Memória com LIsta eNcadeada Simples</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Coloque o que você fez aqui </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h3>Gustavo</h3>
+<ul>
+<li>Construtor e Destrutor de <a class="el" href="class_s_l_pool.html">SLPool</a></li>
+<li>Allocate</li>
+<li>showStructure</li>
+<li>Terminou Free</li>
+<li>Teste de desempenho</li>
+</ul>
+<h3>Yuri</h3>
+<ul>
+<li>Começou (e falhou miseravelmente) fazer o Free</li>
+<li>Testes de funcionamento</li>
+<li>Comentada nas coisas</li>
+<li>Removeu o lixo (coloquei as linhas de onde cada um dos "lixos" sairam no arquivo Lixo Retirado. Se quiser recolocar algum, por alguma razão, as linhas de onde eles sairam simplesmente ficaram em branco. Só colocar novamente)</li>
+</ul>
+<h2>TODO</h2>
+<ul>
+<li>[x] Fazer mr_Sentinel ser uma referência como esperado.</li>
+<li>[x] Allocate</li>
+<li>[x] Show Structure</li>
+<li>[x] Arrumar o before e o after no Free (na declaração)</li>
+<li>[x] Mudar comparações do Free nos 4 casos</li>
+<li>[x] Terminar funções básicas da classe <a class="el" href="class_s_l_pool.html">SLPool</a>.</li>
+<li>[x] Fazer funções bacanas de mostrar o espaço livre como useStatus</li>
+<li>[x] Testes normais de funcionamento</li>
+<li>[x] Teste de desempenho</li>
+<li>[x] Testes Selan(tm) de funcionamento</li>
+<li>[x] Comentar estilo Doxygen</li>
+<li>[x] Readme</li>
+<li>[x] Limpar e organizar o código (remover sujeira)</li>
+<li>[ ] Enviar</li>
+<li>[ ] Jogar Worms pra caralho (sure)</li>
+</ul>
+<h2>RIIIDING TO THE THINKING ZONE</h2>
+<ul>
+<li>Um block DEVERIA ter 16 bytes, mas um sizeof revela que na verdade ele tem 24. No caso de uma alocação que sobre-escreve headers e etcs, o espaço extra realmente será desperdiçao? (Tá muito errado isso, vai que é o c9 ou sei lá.)</li>
+<li>~~Fazer um teste para saber se~~ C++ me permite re-escrever livremente por cima do que eu quiser (Provado).</li>
+<li>~~Se pedir por 32, não será 2 blocos porque terá o header de 4 bits. Isso provavelmente deve ser levado em consideração.~~ Afetado por causa do dilema do block de 24 bits.</li>
+<li>Para saber se os blocos adjacentes são ocupados ou livres, Aritmética de ponteiros.</li>
+<li>Loop infinito quando tentar dar free no primeiro block (A menos que haja caso especial com Sentinel) (Primeiro bloco nunca estará entre dois outros blocos para comparação usual.)</li>
+<li>Sentinel pode acabar apontando para Null em alguns casos. (Ocorre no do pdf) (Exemplo simples: **&ndash;S inserindo 2.) (Possivelmente Next de Sentinel == null implica que o pool está completamente cheio) (CONFIRMADO). </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
